@@ -24,6 +24,8 @@
   "devDependencies": {
     "jest": "22.4.3",
     "redux": "4.0.0",
-    "standard": "11.0.1"
+    "set-state-redux": "1.0.4",
+    "standard": "11.0.1",
+    "tubo": "1.1.2"
   }
 }
