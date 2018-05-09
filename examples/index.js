@@ -1,7 +1,7 @@
 const { decorateCreateStore, decorateCombineReducers } = require('../lib')
 const redux = require('redux')
 
-function carsReducer(state = [], action = {}) {
+function carsReducer (state = [], action = {}) {
   switch (action.type) {
     case 'ADD_CAR':
       return [ ...state, action.payload ]
@@ -10,7 +10,7 @@ function carsReducer(state = [], action = {}) {
   }
 }
 
-function booksReducer(state = [], action = {}) {
+function booksReducer (state = [], action = {}) {
   switch (action.type) {
     case 'ADD_BOOK':
       return [ ...state, action.payload ]
