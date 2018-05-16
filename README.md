@@ -26,18 +26,9 @@ const store = createStore(combineReducers({
   cars: carsReducer
 }))
 
-store.dispatch({
-  type: 'ADD_CAR',
-  payload: 'ferrari'
-})
-expect(store.getState()).toEqual({cars: [ 'ferrari' ]})
-
 store.addReducer('books', booksReducer)
-store.dispatch({
-  type: 'ADD_BOOK',
-  payload: 'moby dick'
-})
-expect(store.getState()).toEqual({cars: [ 'ferrari' ], books: ['moby dick']})
+
+store.removeReducer('books')
 ```
 
 ---
