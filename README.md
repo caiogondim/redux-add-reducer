@@ -14,7 +14,7 @@ Add and remove reducers to a redux store after instantiation.
 npm i -S redux-mutable-reducer
 ```
 
-### Usage
+## Usage
 
 ```js
 const { decorateCreateStore, decorateCombineReducers } = require('redux-mutable-reducer')
